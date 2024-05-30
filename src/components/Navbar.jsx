@@ -91,6 +91,12 @@ const Navbar = () => {
             />
           )}
 
+          {toggle && (
+            <div
+              className="fixed inset-0 bg-black opacity-50 z-10"
+              onClick={() => setToggle(false)}
+            />
+          )}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
